@@ -28,9 +28,8 @@ public class RankingScore {
                 .nickname(claims.get("nickname", String.class))
                 .score(claims.get("score", Integer.class))
                 .build();
-        String dateString = claims.get("date", String.class);
         return rankingScore.toBuilder()
-                .date(LocalDate.parse(dateString , DateTimeFormatter.ofPattern("dd.MM.yyyy")))
+                .date(LocalDate.now())
                 .build();
     }
     @Override
