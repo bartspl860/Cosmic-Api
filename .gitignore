@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+ranking.mv.db
+ranking.trace.db
+src/main/resources/application.yml
+src/test/java/cosmic/conquest/api/ApiApplicationTests.java
